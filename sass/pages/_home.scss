@@ -1,0 +1,32 @@
+.home {
+  position: relative;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__background {
+    img {
+      display: block;
+    }
+  }
+}
+
+.big1 {
+  height: 104.5vh;
+  position: relative;
+}
+
+.container-horizontal {
+  overscroll-behavior: none;
+  width: 500%;
+  display: flex;
+  flex-wrap: nowrap;
+}
