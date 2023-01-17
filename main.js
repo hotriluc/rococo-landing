@@ -36,3 +36,18 @@ gsap.from(".quote", {
     scrub: true,
   },
 });
+
+gsap.from(".gallery__item", {
+  y: -400,
+  scale: 1.5,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: {
+    trigger: ".characteristic",
+    horizontal: true,
+    markers: true,
+    scrub: true,
+    containerAnimation: scrollTween,
+    start: "25%",
+  },
+});

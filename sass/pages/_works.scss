@@ -1,0 +1,29 @@
+.works {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  height: 100%;
+  position: relative;
+  padding: 5rem;
+
+  &__item {
+    overflow: hidden;
+    max-height: 450px;
+    max-width: 350px;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
