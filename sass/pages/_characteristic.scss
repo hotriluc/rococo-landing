@@ -1,0 +1,17 @@
+.characteristic {
+  position: relative;
+  display: flex;
+  width: 100vw;
+
+  &__quotes {
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  // &__background {
+  //   img {
+  //     display: block;
+  //   }
+  // }
+}
