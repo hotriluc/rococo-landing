@@ -23,7 +23,7 @@ let scrollTween = gsap.to(sections, {
   },
 });
 
-gsap.from(".quote", {
+gsap.from(".characteristic__quote", {
   y: 100,
   opacity: 0,
   stagger: 0.25,
@@ -45,9 +45,46 @@ gsap.from(".gallery__item", {
   scrollTrigger: {
     trigger: ".characteristic",
     horizontal: true,
-    markers: true,
     scrub: true,
     containerAnimation: scrollTween,
     start: "25%",
+  },
+});
+
+gsap.from(".big__image", {
+  scale: 1.6,
+  opacity: 0.3,
+  scrollTrigger: {
+    // markers: true,
+    trigger: ".gallery",
+    horizontal: true,
+    scrub: true,
+    containerAnimation: scrollTween,
+    start: "left",
+  },
+});
+
+gsap.from(".end__background", {
+  x: "-100%",
+  scrollTrigger: {
+    // markers: true,
+    trigger: ".big",
+    horizontal: true,
+    scrub: true,
+    containerAnimation: scrollTween,
+    start: "center",
+  },
+});
+
+gsap.from(".end__quote", {
+  x: 100,
+  opacity: 0,
+  stagger: 0.25,
+  scrollTrigger: {
+    trigger: ".big",
+    horizontal: true,
+    containerAnimation: scrollTween,
+    start: "center",
+    scrub: true,
   },
 });

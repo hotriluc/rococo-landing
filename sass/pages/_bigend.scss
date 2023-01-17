@@ -1,0 +1,37 @@
+.big {
+  &__background {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.end {
+  display: flex;
+
+  &__quotes {
+    flex-basis: 50%;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__background {
+    height: 100vh;
+    flex-basis: 50%;
+    overflow: hidden;
+
+    img {
+      display: block;
+      // height: 100%;
+      width: 100%;
+    }
+  }
+}
