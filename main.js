@@ -88,3 +88,20 @@ gsap.from(".end__quote", {
     scrub: true,
   },
 });
+
+const homeTl = gsap.timeline();
+
+homeTl.from(".home__title", {
+  x: -100,
+  opacity: 0,
+  stagger: 0.25,
+});
+
+homeTl.from(
+  ".home__quote",
+  {
+    y: 100,
+    opacity: 0,
+  },
+  ">"
+);
